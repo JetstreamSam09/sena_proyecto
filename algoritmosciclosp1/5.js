@@ -1,6 +1,8 @@
 /*5. Algoritmo para calcular el factorial de un número*/
-let num = 5
-for(let i=1; i<10; 1++){
-    num *= i
+function factorial(n) {
+  let r = 1;
+  for (let i = 1; i <= n; i++) r *= i;
+  return r;
 }
-console.log(num +'x'+ i +'='+ num * i)
+
+console.log(factorial(7));
